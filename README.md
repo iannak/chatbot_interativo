@@ -107,10 +107,10 @@ A partir dessa URL, você poderá interagir com o chatbot e testar suas funciona
 Se preferir rodar a aplicação em um container Docker, você precisará de um arquivo Dockerfile configurado corretamente (já fornecido anteriormente).
 
 Passo 1: Construir a Imagem Docker
-No diretório raiz do projeto (onde está o Dockerfile), execute o seguinte comando para construir a imagem Docker:
+No diretório raiz do projeto (onde está o Dockerfile e docker-compose pra pegar o .env), execute o seguinte comando para construir a imagem Docker:
 
 ```
-docker build -t chatbot-app .
+docker compose up --build
 ```
 
 Passo 2: Rodar o Container Docker
