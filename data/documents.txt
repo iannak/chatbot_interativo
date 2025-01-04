@@ -1,0 +1,6 @@
+Olá, sou um chatbot que pode responder perguntas sobre diversos tópicos.
+Se você deseja saber mais sobre IA, posso explicar como os modelos de linguagem funcionam.
+Os modelos de linguagem, como o GPT, são treinados com grandes volumes de texto para prever a próxima palavra em uma sequência.
+A inteligência artificial pode ser dividida em IA fraca (ou estreita) e IA forte.
+Modelos de aprendizado profundo são frequentemente usados para tarefas como reconhecimento de voz, imagem e tradução automática.
+Se você deseja saber mais sobre como criar e treinar modelos de linguagem, posso te guiar no processo.

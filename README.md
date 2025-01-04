@@ -9,7 +9,6 @@ Antes de começar a instalação e execução da aplicação, é necessário ter
 1. Python 3.9+
 A aplicação foi construída para funcionar com Python 3.9 ou versões superiores. Você pode verificar sua versão do Python executando:
 
-bash
 ```
 python --version
 ```
@@ -18,7 +17,6 @@ Caso não tenha o Python instalado, você pode baixá-lo aqui.
 2. Docker (Opcional, caso queira rodar a aplicação em container)
 Se você deseja rodar a aplicação dentro de um container Docker, precisará ter o Docker instalado. Você pode verificar se o Docker está instalado com o seguinte comando:
 
-bash
 ```
 docker --version
 ```
@@ -27,7 +25,6 @@ Caso não tenha o Docker, siga as instruções para instalação aqui.
 Passo 1: Clonar o Repositório
 Primeiro, clone o repositório contendo o código da aplicação:
 
-bash
 ```
 git clone <URL_do_repositório>
 cd <diretório_do_repositório>
@@ -40,7 +37,6 @@ Caso esteja executando a aplicação localmente (fora de um container Docker), v
 
 No diretório raiz do projeto, crie e ative um ambiente virtual (opcional, mas recomendado):
 
-bash
 ```
 python -m venv venv  # Criação do ambiente virtual
 source venv/bin/activate  # Ativação do ambiente (Linux/macOS)
@@ -51,7 +47,6 @@ venv\Scripts\activate  # Ativação do ambiente (Windows)
 ```
 Em seguida, instale as dependências listadas no arquivo requirements.txt:
 
-bash
 ```
 pip install -r requirements.txt
 ```
@@ -67,13 +62,11 @@ Passo 3: Configuração de Variáveis de Ambiente
 1. API da Groq
 Se você estiver utilizando a API da Groq, será necessário definir a variável de ambiente para a chave de API. Para isso, crie um arquivo .env no diretório raiz do projeto e adicione sua chave da Groq:
 
-bash
 ```
 GROQ_API_KEY=sua_chave_da_api
 ```
 Ou, no terminal (se preferir definir a variável diretamente):
 
-bash
 ```
 export GROQ_API_KEY=sua_chave_da_api  # Linux/macOS
 ```
@@ -86,7 +79,6 @@ set GROQ_API_KEY=sua_chave_da_api  # Windows
 2. Chave da API do OpenAI (se necessário)
 Caso queira usar a API do OpenAI (em vez da Groq), defina a variável de ambiente com a chave da API do OpenAI:
 
-bash
 ```
 export OPENAI_API_KEY=sua_chave_da_api_openai  # Linux/macOS
 ```
@@ -102,7 +94,6 @@ Agora você está pronto para rodar a aplicação localmente.
 1. Rodar a Aplicação com Streamlit
 Para executar a aplicação com Streamlit, use o seguinte comando:
 
-bash
 ```
 streamlit run app.py
 ```
@@ -118,7 +109,6 @@ Se preferir rodar a aplicação em um container Docker, você precisará de um a
 Passo 1: Construir a Imagem Docker
 No diretório raiz do projeto (onde está o Dockerfile), execute o seguinte comando para construir a imagem Docker:
 
-bash
 ```
 docker build -t chatbot-app .
 ```
@@ -126,7 +116,6 @@ docker build -t chatbot-app .
 Passo 2: Rodar o Container Docker
 Após a imagem ser construída com sucesso, execute o container:
 
-bash
 ```
 docker run -p 8501:8501 chatbot-app
 ```
